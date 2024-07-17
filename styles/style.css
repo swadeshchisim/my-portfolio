@@ -3,12 +3,49 @@
     src: url(/fonts/source-sans-pro/SourceSansPro-Regular.otf);
 }
 
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+}
 /* body styles */
 body {
     font-family: "Source Sans Pro", Sans-serif;
 }
+
+/* logo area styles */
 .logo-text {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
+    color: #111111;
+}
+.custom-menu > li > a {
+    color: #333;
+}
+
+a.nav-link.active {
+    width: 100px;
+    text-align: center;
+    border-bottom: 3px solid #7C3CD4;
+}
+.custom-menu a.nav-link:hover {
+    text-align: center;
+    border-bottom: 3px solid #7C3CD4;
+    overflow: hidden;
+}
+
+/* media query styles */
+@media screen and (max-width: 576px) {
+    a.nav-link.active {
+        color: #fff !important;
+        width:100%;
+        text-align: left;
+        border-bottom: none;
+        margin-top: 10px;
+        background: #7c3cd4;
+    }
+    .custom-menu .nav-link {
+        padding: 10px 20px;
+    }
+    .custom-menu > .nav-item > .nav-link:hover {
+        border-bottom: 0;
+        text-align-last: left;
+    }
 }
