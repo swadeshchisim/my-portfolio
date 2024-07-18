@@ -74,6 +74,9 @@ a.nav-link.active {
     .banner-description {
         width: 100%;
     }
+    .social-area {
+        display: none;
+    }
 }
 
 /* small device */
@@ -102,6 +105,9 @@ a.nav-link.active {
     .banner-description {
         width: 100%;
     }
+    .social-area {
+        display: none;
+    }
 }
 
 /* medium device */
@@ -129,5 +135,8 @@ a.nav-link.active {
     }
     .banner-description {
         width: 90%;
+    }
+    .social-area {
+        display: none;
     }
 }
