@@ -37,7 +37,7 @@ a.nav-link.active {
     letter-spacing: 3px;
 }
 .banner-description {
-    width: 60%;
+    width: 50%;
 }
 .custom-btn {
     color: #fff;
@@ -46,6 +46,8 @@ a.nav-link.active {
 
 
 /* media query styles */
+
+/* extra small screen */
 @media screen and (max-width: 576px) {
     a.nav-link.active {
         color: #fff !important;
@@ -74,7 +76,23 @@ a.nav-link.active {
     }
 }
 
+/* small device */
 @media screen and (min-width: 577px) and (max-width: 768px) {
+    a.nav-link.active {
+        color: #fff !important;
+        width:100%;
+        text-align: left;
+        border-bottom: none;
+        margin-top: 10px;
+        background: #7c3cd4;
+    }
+    .custom-menu > .nav-item > .nav-link {
+        padding-left: 20px;
+    }
+    .custom-menu > .nav-item > .nav-link:hover {
+        border-bottom: 0;
+        text-align-last: left;
+    }
     .banner-area {
         padding: 70px 0;
     }
@@ -83,5 +101,33 @@ a.nav-link.active {
     }
     .banner-description {
         width: 100%;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    a.nav-link.active {
+        color: #fff !important;
+        width:100%;
+        text-align: left;
+        border-bottom: none;
+        margin-top: 10px;
+        background: #7c3cd4;
+    }
+    .custom-menu > .nav-item > .nav-link {
+        padding-left: 20px;
+    }
+    .custom-menu > .nav-item > .nav-link:hover {
+        border-bottom: 0;
+        text-align-last: left;
+    }
+    .banner-area {
+        padding: 100px 0;
+    }
+    .banner-title {
+        font-size: 48px;
+    }
+    .banner-description {
+        width: 90%;
     }
 }
