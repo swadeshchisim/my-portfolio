@@ -31,6 +31,12 @@ a.nav-link.active {
     overflow: hidden;
 }
 
+/* Banner styles */
+.banner-description {
+    max-width: 65%;
+}
+
+
 /* media query styles */
 @media screen and (max-width: 576px) {
     a.nav-link.active {
