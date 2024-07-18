@@ -3,10 +3,6 @@
     src: url(/fonts/source-sans-pro/SourceSansPro-Regular.otf);
 }
 
-.container {
-    max-width: 1420px;
-    margin: 0 auto;
-}
 /* body styles */
 body {
     font-family: "Source Sans Pro", Sans-serif;
@@ -32,8 +28,20 @@ a.nav-link.active {
 }
 
 /* Banner styles */
+.banner-area {
+    padding: 200px 0;
+    background: url(/images/banner.jpg) no-repeat center center;
+}
+.banner-title {
+    font-size: 5rem;
+    letter-spacing: 3px;
+}
 .banner-description {
-    max-width: 65%;
+    width: 60%;
+}
+.custom-btn {
+    color: #fff;
+    background: #7C3CD4;
 }
 
 
@@ -53,5 +61,27 @@ a.nav-link.active {
     .custom-menu > .nav-item > .nav-link:hover {
         border-bottom: 0;
         text-align-last: left;
+    }
+    /* Banner Styles */
+    .banner-area {
+        padding: 60px 0 70px;
+    }
+    .banner-title {
+        font-size: 28px;
+    }
+    .banner-description {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .banner-area {
+        padding: 70px 0;
+    }
+    .banner-title {
+        font-size: 38px;
+    }
+    .banner-description {
+        width: 100%;
     }
 }
