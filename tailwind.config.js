@@ -2,7 +2,7 @@
       theme: {
         extend: {
           colors: {
-            brand: '#1e40af',
+            brand: '#163031',
           },
           fontFamily: {
             custom: ['"Comic Sans MS"', 'cursive']
